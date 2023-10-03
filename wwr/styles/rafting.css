@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap');
+:root {
+    --primary-color: #0073e6;
+    --secondary-color: #8B4513;
+    --accent1-color: #00AA9A;
+    --accent2-color: #F5F5F5;
+
+    --heading-font: Monteserrat, serif;
+    --paragraph-font: Roboto , serif;
+
+    --nav-background-color: #F5F5F5;
+    --nav-link-color: #00AA9A;
+    --nav-hover-link-color: #0073e6;
+    --nav-hover-background-color: #0073e6;
+}
+
+h1, h2, h3 {
+    font-family: var(--paragraph-font);
+    color: var(--primary-color); 
+}
+p {
+    font-family: var(--paragraph-font);
+    color: black;
+}
+footer a {
+    text-decoration: none;
+}
+
+body {
+    max-width: 1200px;
+    margin: 0 auto; 
+}
+.hero {
+    position: relative;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+    
+}
+.hero h1 {
+    position: absolute;
+    top: 20px; 
+    left: 20px; 
+}
+
+
+
+.hero article {
+    position: absolute;
+    top: 100px; 
+    left: 20px; 
+    width: 300px; 
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px; 
+}
+
+
+.hero article img {
+    float: right;
+    margin-left: 20px; 
+}   
