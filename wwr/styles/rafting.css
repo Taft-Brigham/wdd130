@@ -135,7 +135,7 @@ header nav {
 
 /* Style individual figures (each containing an image and caption) */
 .image-container figure {
-    flex-basis: calc(15% - 5px); 
+    flex-basis: calc(20% - 10px); 
     text-align: center;
 }
 
