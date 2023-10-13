@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> WDD 130 | HTML Form - User Poll</title>
+    <link rel="stylesheet" href="poll-form.css">
+</head>
+<body>
+    <header>
+        <h1>WDD 130 | EZRA TAFT BRIGHAM ESSIEN | HTML Form - User Poll</h1>
+    </header>
+
+    <main>
+        <form>
+            <fieldset>
+                <legend>Contacts Information</legend>
+                <div class="form-item column2">
+                    <label for="fullname">Fullname:</label>
+                    <input type="text" id="fullname" name="fullname">
+                </div>
+                
+                
+                <div class="form-item column2">
+                    <label for="useremail">Email:</label>
+                    <input type="email" id="useremail" name="useremail">
+                </div>
+                
+            
+            </fieldset>
+
+            <fieldset>
+                <legend>Questions</legend>
+                <div class="form-item column1">
+                    <label for="browser">What is your favorite internet browser?</label>
+                    <select name="browser" id="browser">
+                        <option value="firefox">Firefox</option>
+                        <option value="chrome" selected>Chrome</option>
+                        <option value="safari" >Safari</option>
+                        <option value="opera" >Opera</option>
+                        <option value="edge" >Edge</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                
+                
+                <div class="form-item column1">
+                    <label for="pet">Do you have a household pet?</label>
+                    <input type="checkbox" id="pet" name="pet">
+                </div>
+               
+                
+                <label for="feedback" class="feedback" >List the places you have lived:</label>
+                <textarea name="feedback" id="feedback" cols="30" rows="10" placeholder="Ghana Accra, Nigeria Abuja, Togo Lome, Benin Cotonou"></textarea>
+            </fieldset>
+            <button type="submit">Submit Poll</button>
+        </form>
+        
+    </main>
+
+    <footer>
+        <p>©️2023 | HTML Form - User Poll Activity | Ezra Taft Brigham Essien</p>
+    </footer>
+</body>
+</html>
