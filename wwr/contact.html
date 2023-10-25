@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto&display=swap">
     <link rel="stylesheet" href="styles/rafting.css">
     <title>CONTACT US | RAFTING </title>
-    <meta name="description" content="Ezra Taft Brigham Essien | WDD130. Contact us to learn more about our page and how to reach our various workers">
+    <meta name="description" content="Ezra Taft Brigham Essien | WDD130. Contact Rafting Adventures to learn more about our website and get in touch with our dedicated team. Find our location in Labone, Accra, or reach out via phone or email. Send us a message, and we'll be happy to assist you">
     <meta name="author" content="Ezra Taft Brigham Essien">
 </head>
 <body>
@@ -22,52 +22,65 @@
 
     <main>
         <section id="contact-form">
-            <h1>Contact Us</h1>
+            <h1>Contact Us</h1> 
             <form>
                 <fieldset class="contact-info">
                     <legend>Contact Information</legend>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d5166.4020867959625!2d-0.1938718300043815!3d5.566892414564779!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sgh!4v1697242395083!5m2!1sen!2sgh" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d5166.4020867959625!2d-0.1938718300043815!3d5.566892414564779!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sgh!4v1697242395083!5m2!1sen!2sgh" width="400" height="300"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 
-                    <section id="contact-info">
+                    <div id="contact-info">
                         <div class="contact-item">
-                            <img src="images/location icon.png" alt="Address Icon">
+                            <img src="images/location.png" alt="Address Icon">
                             <p>57 Independence avenue<br>Labone, Accra</p>
                         </div>
                         <div class="contact-item">
-                            <img src="images/phone icon.png" alt="Phone Icon">
+                            <img src="images/phone.png" alt="Phone Icon">
                             <p>Phone: (233) 594-909-365</p>
                         </div>
                         <div class="contact-item">
-                            <img src="images/email icon.png" alt="Email Icon">
+                            <img src="images/email-icon.png" alt="Email Icon">
                             <p>Email: taftbrigham@gmail.com</p>
                         </div>
-                    </section>
+                    </div>
                 </fieldset>
                 <fieldset>
                     <legend>Meet Our Team</legend>
                     <div id="employee-profiles" class="center-button">
                         <div class="employee">
-                            <img src="images/emp 1.jpeg" alt="Employee 1">
-                            <p>Jane Doe</p>
-                            <p>Title: River Guide</p>
+                            <img src="images/emp1.jpeg" alt="Employee 1">
+                            <div class="employee-details">
+                                <p class="employee-name">Jane Doe</p>
+                                <p class="employee-job">River Guide</p>
+                                <p class="employee-description">Jane is our experienced<br>river guide, navigating<br>and leading thrilling rafting<br>adventures.</p>
+                            </div>
                         </div>
                         <div class="employee">
-                            <img src="images/enp 2.jpeg" alt="Employee 2">
-                            <p>Jane Smith</p>
-                            <p>Title: Booking Specialist</p>
+                            <div class="employee-details">
+                                <p class="employee-name">John Smith</p>
+                                <p class="employee-job">Booking Specialist</p>
+                                <p class="employee-description">John ensures your reservation<br>process is smooth<br>and helps you plan<br>your rafting experience.</p>
+                            </div>
+                            <img src="images/enp2.jpeg" alt="Employee 2">
                         </div>
                         <div class="employee">
-                            <img src="images/emp 3.jpeg" alt="Employee 3">
-                            <p>Mike Johnson</p>
-                            <p>Title: Safety Instructor</p>
+                            <img src="images/emp3.jpeg" alt="Employee 3">
+                            <div class="employee-details">
+                                <p class="employee-name">Mike Johnson</p>
+                                <p class="employee-job">Safety Instructor</p>
+                                <p class="employee-description">Mike is dedicated to<br>ensuring your safety<br>during your rafting<br>journey.</p>
+                            </div>
                         </div>
                         <div class="employee">
-                            <img src="images/emp 4.jpeg" alt="Employee 4">
-                            <p>Josh Carlson</p>
-                            <p>Title: Rafting Expect</p>
+                            <div class="employee-details">
+                                <p class="employee-name">Josh Carlson</p>
+                                <p class="employee-job">Rafting Expert</p>
+                                <p class="employee-description">Josh is an expert<br>in all things rafting,<br>making your experience<br>unforgettable.</p>
+                            </div>
+                            <img src="images/emp4.jpeg" alt="Employee 4">
                         </div>
                     </div>
                 </fieldset>
+                
 
                 <fieldset>
                     <legend>Contact Form</legend>
@@ -77,8 +90,9 @@
                     <label for="email">Your Email:</label>
                     <input type="email" id="email" name="email" required>
 
-                    <label for="purpose">Purpose of Message:</label>
+                   
                     <div id="purpose">
+                        <label for="inquiry">Purpose of Message:</label>
                         <input type="radio" id="inquiry" name="purpose" value="General Inquiry">General Inquiry<br>
                         <input type="radio" id="reservation" name="purpose" value="Reservation Question">Reservation Question <br>
                         <input type="radio" id="suggestion" name="purpose" value="Website Suggestion">Website Suggestion <br>
@@ -87,11 +101,11 @@
                     <label for="message">Your Message:</label>
                     <textarea id="message" name="message" rows="4" required></textarea>
                      
-                    <input type="checkbox" id="newsletter" name="newsletter">
+                    <input type="checkbox" id="subscribe" name="newsletter">
                     <label for="subscribe">Please subscribe me to the monthly newsletter:</label>
                     
                     <label for="submit"></label>
-                    <button type="submit" class="center-button">Submit</button>
+                    <button type="submit" id="submit" class="center-button">Submit Your Enquiries</button>
                 </fieldset>
             </form>
         </section>
@@ -100,15 +114,19 @@
     <footer>
         <p>💡 ©️ 2023 💡 RAFTING 💡 Ezra Taft Brigham Essien 💡</p>
         <div class="social-icons">
-            <a href="https://Taft-Brigham.github.io/wdd130">
-                <img src="images/github icon.webp" alt="GitHub Icon">
+            <a href="https://Taft-Brigham.github.io/wdd130" target="_blank">
+                <img src="images/github.webp" alt="GitHub Icon">
             </a>
-            <a href="https://www.linkedin.com/in/ezra-essien-7733b4263">
-                <img src="images/linkedin icon.webp" alt="LinkedIn Icon">
+            <a href="https://www.linkedin.com/in/ezra-essien-7733b4263" target="_blank">
+                <img src="images/linkedin.webp" alt="LinkedIn Icon">
             </a>
-            <a href="https://www.facebook.com/ezrataftbrigham.essien.9?mibextid=LQQJ4d">
-                <img src="images/facebook icon.png" alt="Facebook Icon">
+            <a href="https://www.facebook.com/ezrataftbrigham.essien.9?mibextid=LQQJ4d" target="_blank">
+                <img src="images/facebook.png" alt="Facebook Icon">
             </a>
+            <a href="images/wireframe-image.jpg" target="_blank">
+                <img src="images/wireframe-icon.png" alt="Contact Us Wireframe" width="30">
+            </a>
+            
         </div>
     </footer>
 </body>

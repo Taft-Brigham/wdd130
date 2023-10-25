@@ -32,13 +32,28 @@ body {
 }
 .hero {
     position: relative;
+    overflow: hidden;
+
+
 }
 
 .hero img {
     display: block;
     width: 100%;
     height: auto;
+    animation: zoom-in 12s ease-in-out infinite;
     
+}
+@keyframes zoom-in {
+    0% {
+        transform: scale(1); /* Start with normal size */
+    }
+    50% {
+        transform: scale(1.05); /* Zoom in halfway through the animation */
+    }
+    100% {
+        transform: scale(1); /* Return to normal size at the end of the animation */
+    }
 }
 .hero h1 {
     position: absolute;
@@ -120,31 +135,44 @@ header nav {
     grid-column: 1 / span 3; 
 }
 
-/* Style the adventures section */
+/* Styles the adventures section */
 .adventures {
     text-align: center; 
     padding: 20px;
 }
 
-/* Style the image container */
+/* Styles the image container */
 .image-container {
     display: flex;
     justify-content: space-between;
-    align-items: center; 
+    align-items: center;
+    flex-wrap: wrap;  
 }
 
-/* Style individual figures (each containing an image and caption) */
+
 .image-container figure {
-    flex-basis: calc(20% - 10px); 
+    flex-basis: calc(30% - 10px); 
     text-align: center;
+    margin: 10px;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s;
 }
 
-/* Style images within figures */
+/* Styles images within figures */
 .image-container img {
     max-width: 100%; 
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s;
 }
 
-/* Style captions within figures */
+.image-container figure:hover,
+.image-container img:hover {
+    transform: scale(1.1); 
+}
+
+/* Styles captions within figures */
 .image-container figcaption {
     margin-top: 10px; 
 }
@@ -159,7 +187,7 @@ fieldset {
 }
 
 
-/* Add the following styles to your existing CSS */
+
 .contact-info {
     max-width: 800px;
     margin: 0 auto;
@@ -199,6 +227,38 @@ iframe {
     height: 300px;
 }
 
+/* Style employee profiles */
+.employee {
+    display: flex;
+    text-align: center;
+    margin: 20px;
+    border: 1px solid #ccc; 
+    padding: 10px; 
+}
+
+.employee img {
+    max-width: 200px;
+   
+}
+
+.employee-details {
+    flex: 1;
+}
+
+.employee-name {
+    font-weight: bold;
+    margin-top: 10px;
+    font-size: 1.2em;
+}
+
+.employee-job {
+    color: #888;
+    font-size: 1em;
+}
+
+.employee-description {
+    font-size: 1em;
+}
 
 
 
@@ -259,6 +319,164 @@ footer {
 
 
 
+/* styles for trips page  */
+.cool-heading {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-bottom: 1px solid grey;
+}
+.cta-link {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #0073e6;
+    color: #fff;
+    padding: 20px 20px;
+    margin: 0 10px 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+ 
+   
+}
+
+.cta-link:hover {
+    background-color: #0057b5; 
+}
+.trip-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.trip-table th, .trip-table td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+.trip-table th {
+    background-color: #0073e6;
+    color: #fff;
+}
+
+.trip-table tr:nth-child(even) {
+    background-color: #f5f5f5;
+}
+
+/* Add hover effect to table rows */
+.trip-table tr:hover {
+    background-color: #0073e6;
+    color: #fff;
+}
+.rafting-container {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-evenly;
+
+}
+
+.rafting {
+background-color: #fff;
+margin: 20px;
+padding: 20px;
+border: 1px solid #ccc;
+border-radius: 5px;
+width: calc(33.33% - 40px);
+transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.rafting img {
+max-width: 100%;
+height: auto;
+transition: transform 0.3s;
+}
+
+.rafting h2 {
+margin: 0;
+font-size: 1.5rem;
+color: #333;
+transition: transform 0.3s;
+}
+
+.rafting p {
+color: #777;
+transition: transform 0.3s;
+}
+
+.rafting-price {
+font-weight: bold;
+color: #0073e6;
+transition: transform 0.3s;
+}
+
+/* Add hover effects */
+.rafting:hover {
+transform: scale(1.05);
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.rafting img:hover {
+transform: scale(1.1);
+}
+
+.rafting h2:hover, .rafting p:hover, .rafting-price:hover {
+transform: scale(1.05);
+color: #0073e6;
+}
+
+/* styles for the home page  */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    grid-gap: 20px; 
+    justify-content: space-between; 
+}
+
+.grid-item {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.grid-item img {
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s;
+}
+
+.grid-item h3 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #333;
+    transition: transform 0.3s;
+}
+
+.grid-item p {
+    color: #777;
+    transition: transform 0.3s;
+}
+
+/*adding hover effects to the grid items */
+.grid-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.grid-item img:hover {
+    transform: scale(1.1);
+}
+
+.grid-item h3:hover, .grid-item p:hover {
+    transform: scale(1.05);
+    color: #0073e6;
+}
 /* Style the footer */
 footer {
     display: flex;
@@ -275,7 +493,7 @@ footer {
     gap: 10px; 
 }
 
-/* Style the social icons (images) */
+/* Style the social icons  */
 .social-icons a img {
     max-width: 30px; 
 }
